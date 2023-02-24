@@ -1,0 +1,4 @@
+{
+  "npm-intellisense.importQuotes": "\"",
+  "typescript.preferences.quoteStyle": "double"
+}
