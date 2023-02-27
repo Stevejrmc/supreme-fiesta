@@ -2,6 +2,7 @@ body {
   font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
+  background-color: #1f1f1f;
 }
 
 #container, .article, #header, #main, .content, form, .col {
@@ -77,6 +78,16 @@ body {
   padding: 10px 0 3px 7px;
 }
 
+#nav-bar p {
+  margin: 0 15px;
+  display: none;
+}
+
+#nav-bar p:hover {
+  color: #ffffff;
+  cursor: pointer;
+}
+
 #menu-button {
   font-size: 40px;
 }
@@ -134,6 +145,11 @@ body {
   font-weight: 400;
 }
 
+#blog h1 {
+  font-size: 2.375em;
+  font-weight: 400;
+}
+
 #primary-skills p {
   font-family: 'Zilla Slab', serif;
   margin: 2% 0;
@@ -146,7 +162,7 @@ body {
 }
 
 .primary-story {
-  font-size: 14px;
+  font-size: 15px;
   line-height: 1.5;
 }
 
@@ -253,15 +269,164 @@ a {
 .thin {
   font-weight: 300 !important;
 }
-/* large phone/tablet styles*/
-@media screen and (min-width: 400px) {
+/* tablet styles */
+@media screen and (min-width: 500px) {
+  .content img {
+    height: 100%;
+  }
 
-}
-/* large tablet/desktop styles */
-@media screen and (min-width: 920px) {
-  #main {
-    flex-direction: row;
+  #head-middle {
+    width: 38%;
+  }
+
+  #nav-spacer {
+    width: 62%;
+  }
+
+  input[type=text] {
+    width: 95%;
+  }
+
+  #name-col {
+    width: 100%;
   }
 }
+/* large tablet/desktop styles */
+@media screen and (min-width: 700px) {
+  #head p {
+    font-size: 1.6em;
+  }
+
+  #head-left {
+    padding-left: 0;
+  }
+
+  #head-middle {
+    width: 47%;
+  }
+
+  #nav-spacer {
+    width: 74%;
+  }
+
+  input[type=text] {
+    width: 97%;
+  }
+}
+
+@media screen and (min-width: 820px) {
+  #head-middle {
+    width: 49%;
+  }
+
+  #nav-spacer {
+    width: 74%;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  #head-middle {
+    width: 55%;
+  }
+
+  #nav-spacer {
+    width: 77%;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  #head-middle {
+    width: 60%;
+  }
+
+  #nav-bar {
+    padding-left: 17px;
+  }
+
+  #head {
+    padding-bottom: 1%;
+  }
+
+  #nav-spacer {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #main {
+    flex-direction: row;
+    margin: 0 auto;
+  }
+
+  #bio {
+    width: 300px;
+    position: fixed;
+    left: 285px;
+  }
+
+  #blog {
+    width: 716px;
+  }
+
+  #contact {
+    width: 300px;
+    position: fixed;
+    right: 285px;
+  }
+
+  #footer {
+    z-index: 1;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+  }
+
+  #social-media {
+    justify-content: flex-end;
+    padding-right: 15px
+  }
+
+  #social-media a {
+    margin: 0 8px;
+  }
+
+  #header {
+    z-index: 1;
+  }
+
+  #head {
+    padding: 0 0 5px 1%;
+  }
+
+  #head-right {
+    padding-top: 1%;
+  }
+
+  #head-middle {
+    width: 78%;
+  }  
+
+  #menu-button, #contact-button {
+    display: none;
+  }
+
+  #nav-bar {
+    padding-bottom: 10px;
+  }
+
+  #nav-bar p {
+    display: block;
+  }
+
+  #nav-spacer {
+    width: 91%;
+  }
+
+  input[type=text] {
+    width: 90%;
+  }
+}
+
 
 
