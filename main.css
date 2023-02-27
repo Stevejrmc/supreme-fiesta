@@ -14,6 +14,7 @@ body {
   overflow-y: scroll;
   scroll-behavior: smooth !important;
   height: 100vh;
+  background: linear-gradient(150deg, #dcebf7, #fcdcd9);
 }
 
 #header {
@@ -103,7 +104,6 @@ body {
 }
 
 #main {
-  background: linear-gradient(150deg, #dcebf7, #fcdcd9);
   padding: 24px 32px;
 }
 
@@ -152,6 +152,8 @@ body {
 
 #footer {
   display: flex;
+  background-color: #1f1f1f;
+  padding: 24px 32px;
 }
 
 .grey {
@@ -208,6 +210,27 @@ input[type=text] {
   outline:none;
   border:1px solid #6cabdd;
   box-shadow:0 0 5px #6cabdd;
+}
+
+#social-media {
+  width: 100%;
+  justify-content: space-around;
+}
+
+#social-media ion-icon {
+  color: #b6b6b6;
+}
+
+#linkedin:hover {
+  color: #0072b1;
+}
+
+#github:hover {
+  color: #ffffff;
+}
+
+#twitter:hover {
+  color: #1DA1F2;
 }
 
 label {
