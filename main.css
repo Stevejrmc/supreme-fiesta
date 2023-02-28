@@ -21,6 +21,7 @@ body {
 #header {
   position: sticky;
   top: 0;
+  z-index: 2;
 }
 
 #nav-bar, #head-right, #name, #head, .row {
@@ -74,7 +75,7 @@ body {
 }
 
 #nav-bar {
-  background-color: black;
+  background-color: #000000;
   padding: 10px 0 3px 7px;
 }
 
@@ -90,6 +91,33 @@ body {
 
 #menu-button {
   font-size: 40px;
+}
+
+.menu-open {
+  position: fixed;
+  left: 0;
+  top: 5em;
+  height: calc(100vh - 5em);
+  min-width: 9em;
+  width: 30vw;
+  z-index: 1;
+  background-color: #000000;
+}
+
+.menu-item {
+  position: relative;
+  font-size: 1em;
+  line-height: 1.375em;
+  font-weight: 600;
+  padding: 0.75em 1em;
+}
+
+.menu-item p {
+  margin: 0;
+}
+
+#menu-spacer {
+  height: 2em;
 }
 
 #contact-me {
@@ -170,6 +198,7 @@ body {
   display: flex;
   background-color: #1f1f1f;
   padding: 24px 32px;
+  z-index: 1;
 }
 
 .grey {
@@ -269,7 +298,7 @@ a {
 .thin {
   font-weight: 300 !important;
 }
-/* tablet styles */
+/* tablets */
 @media screen and (min-width: 500px) {
   .content img {
     height: 100%;
@@ -291,7 +320,7 @@ a {
     width: 100%;
   }
 }
-/* large tablet/desktop styles */
+/* large tablets */
 @media screen and (min-width: 700px) {
   #head p {
     font-size: 1.6em;
@@ -352,6 +381,7 @@ a {
   }
 }
 
+/* desktop */
 @media screen and (min-width: 1200px) {
   #main {
     flex-direction: row;
@@ -425,6 +455,10 @@ a {
 
   input[type=text] {
     width: 90%;
+  }
+
+  #menu-draw {
+    display: none;
   }
 }
 
