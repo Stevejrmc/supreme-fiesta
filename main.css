@@ -31,6 +31,7 @@ body {
 
 #header {
   color: #ffffff;
+  background-color: #000000;
 }
 
 #head {
@@ -93,15 +94,20 @@ body {
   font-size: 40px;
 }
 
-.menu-open {
+#menu-draw {
   position: fixed;
-  left: 0;
+  left: -40vw;
   top: 5em;
   height: calc(100vh - 5em);
   min-width: 9em;
   width: 30vw;
   z-index: 1;
   background-color: #000000;
+}
+
+#menu-draw {
+  -webkit-transition: left 300ms ease-in-out;
+	transition: left 300ms ease-in-out;
 }
 
 .menu-item {
