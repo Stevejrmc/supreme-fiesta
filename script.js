@@ -1,13 +1,41 @@
 $(() => {
-  $(document).on("click", ".menu-closed", function () {
-    $(this).removeClass("menu-closed").addClass("menu-opened");
+  // functions
+  const openMenu = () => {
+    $("#menu-button").removeClass("grey");
+    $("#menu-button").removeClass("menu-closed").addClass("menu-opened");
 
-    $("#menu-draw").css({ "left": 0 });
-  });
+    $("#menu-draw").css("left", 0);
+  }
+  const closeMenu = () => {
+    $("#menu-button").addClass("grey");
+    $("#menu-button").removeClass("menu-opened").addClass("menu-closed");
 
-  $(document).on("click", ".menu-opened", function () {
-    $(this).removeClass("menu-opened").addClass("menu-closed");
+    $("#menu-draw").css("left", "-40vw");
+  }
+  const hide = id => $(`.${id}`).addClass("hide");
+  const showBlog = () => {
+    closeMenu();
+    hide("resume");
+    hide("projects");
+    $(".blog").removeClass("hide");
+  }
+  const showResume = () => {
+    closeMenu();
+    hide("blog");
+    hide("projects");
+    $(".resume").removeClass("hide");
+  }
+  const showProjects = function () {
+    closeMenu();
+    hide("blog");
+    hide("resume");
+    $(".projects").removeClass("hide");
+  }
 
-    $("#menu-draw").css({ "left": "-40vw" });
-  });
+  // Event handlers
+  $(document).on("click", ".menu-closed", openMenu);
+  $(document).on("click", ".menu-opened", closeMenu);
+  $(".blog-link").on("click", showBlog);
+  $(".resume-link").on("click", showResume);
+  $(".projects-link").on("click", showProjects);
 })

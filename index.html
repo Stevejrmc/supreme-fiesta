@@ -34,13 +34,13 @@
       <div class="grey menu-closed" id="menu-button">
         <ion-icon name="menu"></ion-icon>
       </div>
-      <div class="col grey">
+      <div class="col grey blog-link">
         <p>Blog</p>
       </div>
-      <div class="col grey">
+      <div class="col grey resume-link">
         <p>Resume</p>
       </div>
-      <div class="col grey">
+      <div class="col grey projects-link">
         <p>Projects</p>
       </div>
       <div id="nav-spacer">
@@ -55,15 +55,21 @@
   <div id="container">
     <div id="menu-draw" class="grey">
       <div id="menu-spacer"></div>
-      <div class="menu-item">
-        <p>Blog</p>
-      </div>
-      <div class="menu-item">
-        <p>Resume</p>
-      </div>
-      <div class="menu-item">
-        <p>Projects</p>
-      </div>
+      <a href="#main-article">
+        <div class="menu-item blog-link">
+          <p>Blog</p>
+        </div>
+      </a>
+      <a href="#link-target">
+        <div class="menu-item resume-link">
+          <p>Resume</p>
+        </div>
+      </a>
+      <a href="#link-target">
+        <div class="menu-item projects-link">
+          <p>Projects</p>
+        </div>
+      </a>
     </div>
     <!-- main content container -->
     <div id="main">
@@ -81,19 +87,51 @@
               JavaScript &nbsp; React &nbsp; TypeScript &nbsp; Node
             </p>
           </div>
-          <div class="primary-story thing">
+          <div class="primary-story thin">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <span id="link-target"></span>
+          </div>
+        </div>
+      </div>
+      <div id="main-article" class="content">
+        <img id="blog" class="blog" src="code_editor.jpg" alt="code on a computer screen">
+        <div class="article blog">
+          <div class="primary-story thin">
+            <h1>How I became a Software Engineer</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
           </div>
         </div>
-      </div>
-
-      <div id="blog" class="content">
-        <img src="code_editor.jpg" alt="code on a computer screen">
-        <div class="article">
-          <div class="primary-story thing">
-            <h1>How I became a Software Engineer</h1>
+        <div class="article resume hide">
+          <div class="primary-story">
+            <img src="sm_se_resume.jpg" alt="resume">
+            <p id="resume-download">
+              Click 
+              <a id="download" target="_blank" href="./sm_se_resume.pdf" download="resume"><strong>here</strong></a> to download.
+            </p>
+          </div>
+        </div>
+        <div class="article projects hide">
+          <div class="primary-story thin">
+            <h1>Project X</h1>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
