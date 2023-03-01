@@ -60,6 +60,7 @@ body {
 
 #head-right {
   padding-top: 2%;
+  width: 75px;
 }
 
 #lang-selector {
@@ -307,6 +308,11 @@ a {
 
 .thin {
   font-weight: 300 !important;
+}
+
+#head-right:hover {
+  cursor: pointer;
+  background-color: #454545;
 }
 
 /* tablets */
