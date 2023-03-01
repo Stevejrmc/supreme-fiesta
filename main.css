@@ -63,6 +63,29 @@ body {
   width: 75px;
 }
 
+#lang-options {
+  flex-direction: column;
+  width: 94px;
+  color: #ffffff;
+  background-color: #1f1f1f;
+  position: fixed;
+  right: 1%;
+  padding: 10px 0;
+  border-radius: 5px;
+  z-index: 3;
+  top: 5%;
+  cursor: pointer;
+}
+
+#lang-options p {
+  margin: 0;
+  padding: 9px;
+}
+
+#lang-options p:hover {
+  background-color: #3d3d3d;
+}
+
 #lang-selector {
   padding-top: 8%;
 }
@@ -239,7 +262,7 @@ body {
 }
 
 input[type=text] {
-  width: 90%;
+  width: 88%;
   height: 30px;
 }
 
@@ -315,6 +338,12 @@ a {
   background-color: #454545;
 }
 
+@media screen and (max-width: 1000px) {
+  #head-right {
+    display: none;
+  }
+}
+
 /* tablets */
 @media screen and (min-width: 500px) {
   .content img {
@@ -381,6 +410,10 @@ a {
 
   #nav-spacer {
     width: 77%;
+  }
+
+  #lang-options {
+    top: 4%;
   }
 }
 
@@ -486,6 +519,11 @@ a {
     position: relative;
     bottom: 8em;
     left: 29em;
+  }
+
+  #lang-options {
+    top: 8%;
+    right: 0.75%;
   }
 }
 

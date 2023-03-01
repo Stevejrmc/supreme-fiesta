@@ -53,6 +53,26 @@
     </div>
   </div>
   <div id="container">
+    <div id="lang-options" class="thin hide col">
+      <div class="lang" id="english">
+        <p>English</p>
+      </div>
+      <div class="lang" id="portuguese">
+        <p>Português</p>
+      </div>
+      <div class="lang" id="spanish">
+        <p>Español</p>
+      </div>
+      <div class="lang" id="arabic">
+        <p>عربي</p>
+      </div>
+      <div class="lang" id="chinese">
+        <p>中文</p>
+      </div>
+      <div class="lang" id="french">
+        <p>Français</p>
+      </div>
+    </div>
     <div id="menu-draw" class="grey">
       <div id="menu-spacer"></div>
       <a href="#main-article">
@@ -209,6 +229,7 @@
         </div>
       </div>
     </div>
+    <div id="google_translate_element"></div>
     <!-- Footer -->
     <div id="footer">
       <div class="row" id="social-media">
@@ -224,6 +245,15 @@
       </div>
     </div>
   </div>
+  <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  <script>
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement(
+        { pageLanguage: "en" },
+        "google_translate_element"
+      )
+    }
+  </script>
   <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
   <script src="script.js"></script>
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
