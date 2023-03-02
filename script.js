@@ -70,9 +70,6 @@ $(() => {
     };
     let abbreviation = abbrv[userChoice];
     let selection = options[userChoice];
-    console.log("selection: ", selection);
-    console.log("abbreviation: ", abbreviation);
-    console.log(document.querySelector(".goog-te-combo"))
     const lang = document.querySelector(".goog-te-combo").children[selection];
     lang.selected = true;
     simulateClick(lang);
