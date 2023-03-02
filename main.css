@@ -445,7 +445,7 @@ a {
   #bio {
     width: 300px;
     position: fixed;
-    left: 285px;
+    left: 9%;
   }
 
   #main-article {
@@ -455,7 +455,7 @@ a {
   #contact {
     width: 300px;
     position: fixed;
-    right: 285px;
+    right: 9%;
   }
 
   #footer {
@@ -488,7 +488,7 @@ a {
   }
 
   #head-middle {
-    width: 78%;
+    width: 70%;
   }  
 
   #menu-button, #contact-button {
@@ -527,5 +527,17 @@ a {
   }
 }
 
+@media screen and (min-width: 1800px) {
+  #head-middle {
+    width: 78%;
+  } 
 
+  #bio {
+    left: 14%;
+  }
+
+  #contact {
+    right: 14%;
+  }
+}
 
