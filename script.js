@@ -38,42 +38,42 @@ $(() => {
   // Thank you Marcelo Rossi: 
   // https://stackoverflow.com/users/463329/marcelo-rossi
   // Found this function on Stackoverflow:
-  function simulateClick(item) {
-    item.dispatchEvent(new PointerEvent('pointerdown', { bubbles: true }));
-    item.dispatchEvent(new MouseEvent('mousedown', { bubbles: true }));
-    item.dispatchEvent(new PointerEvent('pointerup', { bubbles: true }));
-    item.dispatchEvent(new MouseEvent('mouseup', { bubbles: true }));
-    item.dispatchEvent(new MouseEvent('mouseout', { bubbles: true }));
-    item.dispatchEvent(new MouseEvent('click', { bubbles: true }));
-    item.dispatchEvent(new Event('change', { bubbles: true }));
+  // function simulateClick(item) {
+  //   item.dispatchEvent(new PointerEvent('pointerdown', { bubbles: true }));
+  //   item.dispatchEvent(new MouseEvent('mousedown', { bubbles: true }));
+  //   item.dispatchEvent(new PointerEvent('pointerup', { bubbles: true }));
+  //   item.dispatchEvent(new MouseEvent('mouseup', { bubbles: true }));
+  //   item.dispatchEvent(new MouseEvent('mouseout', { bubbles: true }));
+  //   item.dispatchEvent(new MouseEvent('click', { bubbles: true }));
+  //   item.dispatchEvent(new Event('change', { bubbles: true }));
 
-    return true;
-  }
+  //   return true;
+  // }
 
   const selectLanguage = function () {
-    let userChoice = this.id;
-    const options = {
-      chinese: 19,
-      french: 33,
-      portuguese: 92,
-      spanish: 109,
-      arabic: 4,
-      english: 28,
-    }
-    const abbrv = {
-      chinese: "CN",
-      french: "FR",
-      portuguese: "PT",
-      spanish: "ES",
-      english: "EN",
-      arabic: "AR"
-    };
-    let abbreviation = abbrv[userChoice];
-    let selection = options[userChoice];
-    const lang = document.querySelector(".goog-te-combo").children[selection];
-    lang.selected = true;
-    simulateClick(lang);
-    $("#lang").text(abbreviation);
+    // let userChoice = this.id;
+    // const options = {
+    //   chinese: 19,
+    //   french: 33,
+    //   portuguese: 92,
+    //   spanish: 109,
+    //   arabic: 4,
+    //   english: 28,
+    // }
+    // const abbrv = {
+    //   chinese: "CN",
+    //   french: "FR",
+    //   portuguese: "PT",
+    //   spanish: "ES",
+    //   english: "EN",
+    //   arabic: "AR"
+    // };
+    // let abbreviation = abbrv[userChoice];
+    // let selection = options[userChoice];
+    // const lang = document.querySelector(".goog-te-combo").children[selection];
+    // lang.selected = true;
+    // simulateClick(lang);
+    // $("#lang").text(abbreviation);
 
     hide("#lang-options");
   };
